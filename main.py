@@ -57,7 +57,7 @@ def Output(movie_name,number):
 st.title("Movie Recommender")
 movie_name = st.text_input("Enter your favourite movie")
 number = st.slider("No. of recommendations: ", max_value=30)
-if movie_name!="":
+if movie_name!="" and number!=0:
     Output(movie_name,number)
 
 
