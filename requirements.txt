@@ -1,0 +1,4 @@
+beautifulsoup4==4.10.0
+sklearn==0.0
+protobuf==3.19.1
+ipykernel==6.6.0
