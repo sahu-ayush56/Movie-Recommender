@@ -54,7 +54,7 @@ def Output(movie_name,number):
                 st.write(movie+"- "+("https://www6.f2movies.to"+movie_link))
         st.write("Links aren't working? Try with VPN :P")
     except:
-        st.write("Dataset contains mostly hollywood movies, Try again :/")
+        st.write("Dataset contains mostly famous hollywood movies, Try again :/")
 
 st.title("Movie Recommender")
 movie_name = st.text_input("Enter your favourite movie")
