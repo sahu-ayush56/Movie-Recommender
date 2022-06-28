@@ -47,12 +47,14 @@ def Output(movie_name,number):
     try:
         movies = recommender(movie_name,number)
         st.write("Closest match in the dataset: "+title_match)
+        
         for movie in movies:
             movie_link = links(movie.replace(' ','-'))
             if movie_link!=None:
                 st.write(movie+"- "+("https://www6.f2movies.to"+movie_link))
+        st.write("Links aren't working? Try with VPN :P")
     except:
-        st.write("Please enter different movie name")
+        st.write("Dataset contains mostly hollywood movies, Try again :/")
 
 st.title("Movie Recommender")
 movie_name = st.text_input("Enter your favourite movie")
